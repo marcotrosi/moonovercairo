@@ -1,3 +1,5 @@
+![](./doc/moc_header.png)
+
 # Moon Over Cairo
 
 ## Disclaimer
