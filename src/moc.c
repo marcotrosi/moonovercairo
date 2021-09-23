@@ -72,6 +72,12 @@ int luaopen_moc(lua_State *L) // <<<
       {"pdf_surface_create", pdf_surface_create},
       {"ps_surface_create", ps_surface_create},
       {"translate", translate},
+      {"set_font_size", set_font_size},
+      {"show_text", show_text},
+      {"font_extents", font_extents},
+      {"text_extents", text_extents},
+      {"select_font_face", select_font_face},
+      /* {"set_font_face", set_font_face}, */
       {NULL, NULL}
    };
 
@@ -101,6 +107,13 @@ int luaopen_moc(lua_State *L) // <<<
    REGISTER_ENUM("FORMAT_RGB16_565", CAIRO_FORMAT_RGB16_565)
    REGISTER_ENUM("FORMAT_RGB30"    , CAIRO_FORMAT_RGB30    )
 
+   REGISTER_ENUM("FONT_SLANT_NORMAL" , CAIRO_FONT_SLANT_NORMAL )
+   REGISTER_ENUM("FONT_SLANT_ITALIC" , CAIRO_FONT_SLANT_ITALIC )
+   REGISTER_ENUM("FONT_SLANT_OBLIQUE", CAIRO_FONT_SLANT_OBLIQUE)
+
+   REGISTER_ENUM("FONT_WEIGHT_NORMAL", CAIRO_FONT_WEIGHT_NORMAL)
+   REGISTER_ENUM("FONT_WEIGHT_BOLD"  , CAIRO_FONT_WEIGHT_BOLD  )
+    
    return 1;
 } // >>>
 
@@ -389,6 +402,64 @@ int set_line_width(lua_State *L) // <<<
 // >>>
 
 // fonts <<<
+int select_font_face(lua_State *L) // <<<
+{
+   int FontWeight = lua_tointeger(L, 4);
+   int FontSlant = lua_tointeger(L, 3);
+   const char *FontFamily = lua_tostring(L, 2);
+   cairo_t *context = (cairo_t*)lua_topointer(L, 1);
+   cairo_select_font_face(context, FontFamily, FontSlant, FontWeight);
+   return 0;
+} // >>>
+// int set_font_face(lua_State *L) // <<<
+// {
+//    const char *FontFamily = lua_tostring(L, 2);
+//    cairo_t *context = (cairo_t*)lua_topointer(L, 1);
+//    cairo_set_font_face(context, FontFamily);
+//    return 0;
+// } // >>>
+int set_font_size(lua_State *L) // <<<
+{
+   double size = lua_tonumber(L, 2);
+   cairo_t *context = (cairo_t*)lua_topointer(L, 1);
+   cairo_set_font_size(context, size);
+   return 0;
+} // >>>
+int show_text(lua_State *L) // <<<
+{
+   const char *text = lua_tostring(L, 2);
+   cairo_t *context = (cairo_t*)lua_topointer(L, 1);
+   cairo_show_text(context, text);
+   return 0;
+} // >>>
+int font_extents(lua_State *L) // <<<
+{
+   cairo_font_extents_t FontExtents = {0.0};
+   cairo_t *context = (cairo_t*)lua_topointer(L, 1);
+   cairo_font_extents(context, &FontExtents);
+   lua_newtable(L);
+   lua_pushliteral(L, "ascent")       ; lua_pushnumber(L, FontExtents.ascent)       ; lua_settable(L, -3); 
+   lua_pushliteral(L, "descent")      ; lua_pushnumber(L, FontExtents.descent)      ; lua_settable(L, -3); 
+   lua_pushliteral(L, "height")       ; lua_pushnumber(L, FontExtents.height)       ; lua_settable(L, -3); 
+   lua_pushliteral(L, "max_x_advance"); lua_pushnumber(L, FontExtents.max_x_advance); lua_settable(L, -3); 
+   lua_pushliteral(L, "max_y_advance"); lua_pushnumber(L, FontExtents.max_y_advance); lua_settable(L, -3); 
+   return 1;
+} // >>>
+int text_extents(lua_State *L) // <<<
+{
+   cairo_text_extents_t TextExtents = {0.0};
+   const char *text = lua_tostring(L, 2);
+   cairo_t *context = (cairo_t*)lua_topointer(L, 1);
+   cairo_text_extents(context, text, &TextExtents);
+   lua_newtable(L);
+   lua_pushliteral(L, "x_bearing"); lua_pushnumber(L, TextExtents.x_bearing); lua_settable(L, -3);
+   lua_pushliteral(L, "y_bearing"); lua_pushnumber(L, TextExtents.y_bearing); lua_settable(L, -3);
+   lua_pushliteral(L, "width"    ); lua_pushnumber(L, TextExtents.width    ); lua_settable(L, -3);
+   lua_pushliteral(L, "height"   ); lua_pushnumber(L, TextExtents.height   ); lua_settable(L, -3);
+   lua_pushliteral(L, "x_advance"); lua_pushnumber(L, TextExtents.x_advance); lua_settable(L, -3);
+   lua_pushliteral(L, "y_advance"); lua_pushnumber(L, TextExtents.y_advance); lua_settable(L, -3);
+   return 1;
+} // >>>
 // >>>
 // >>>
 

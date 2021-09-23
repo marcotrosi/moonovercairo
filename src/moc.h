@@ -44,4 +44,15 @@ int surface_destroy(lua_State *L);
 int surface_write_to_png(lua_State *L);
 int translate(lua_State *L);
 
+int select_font_face(lua_State *L);
+// int set_font_face(lua_State *L);
+int set_font_size(lua_State *L);
+int show_text(lua_State *L);
+int font_extents(lua_State *L);
+int text_extents(lua_State *L);
+/* void	cairo_set_font_options() */
+
+// void	cairo_tag_begin ()
+// void	cairo_tag_end ()
+
 #endif // MOC_H
