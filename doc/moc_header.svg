@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+
+<svg
+   version="1.0"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   width="947px"
+   height="947px"
+   viewBox="0 0 947 947"
+   enable-background="new 0 0 947 947"
+   xml:space="preserve"
+   sodipodi:docname="moc-header.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   inkscape:export-filename="/Users/marcotrosi/Code/projects/moonovercairo/doc/moc_header.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs23">
+	
+	
+	
+	
+	
+
+		
+		
+		
+	</defs><sodipodi:namedview
+   id="namedview21"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.16387441"
+   inkscape:cx="1424.8717"
+   inkscape:cy="686.50135"
+   inkscape:window-width="1397"
+   inkscape:window-height="855"
+   inkscape:window-x="43"
+   inkscape:window-y="23"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="layer4"
+   showguides="true"
+   inkscape:guide-bbox="true"><sodipodi:guide
+     position="128.38118,211.45136"
+     orientation="0,-1"
+     id="guide453" /></sodipodi:namedview>
+
+<g
+   inkscape:groupmode="layer"
+   id="layer4"
+   inkscape:label="frame"
+   sodipodi:insensitive="true"><rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:7.36"
+     id="rect958"
+     width="3294.3699"
+     height="949.81592"
+     x="11.347656"
+     y="9.078125" /></g><g
+   inkscape:groupmode="layer"
+   id="layer3"
+   inkscape:label="moon"
+   style="display:inline"
+   sodipodi:insensitive="true"><path
+     fill="#000080"
+     d="m 835.5,473.6 c 0,-199.8 -162.2,-362 -362,-362 -199.8,0 -362,162.2 -362,362 0,199.8 162.2,362 362,362 199.8,0 362,-162.2 362,-362"
+     id="path2"
+     sodipodi:insensitive="true"
+     style="display:inline" /><path
+     fill="#ffffff"
+     d="m 729.5,323.6 c 0,-58.5 -47.5,-106 -106,-106 -58.5,0 -106,47.5 -106,106 0,58.5 47.5,106 106,106 58.5,0 106,-47.5 106,-106"
+     id="path4"
+     style="display:inline" /></g><g
+   inkscape:groupmode="layer"
+   id="layer1"
+   inkscape:label="pyramids"
+   style="display:inline"
+   sodipodi:insensitive="true"><g
+     id="g3367"
+     transform="matrix(0.79411765,0,0,0.67155227,305.69139,241.58928)"><path
+       id="path3363"
+       style="opacity:1;fill:#ffffff;stroke-width:1.07928"
+       d="M 128.38118,735.54864 386.49978,335.41761 688.72727,735.54864 Z"
+       sodipodi:nodetypes="cccc" /><path
+       id="path3365"
+       style="opacity:1;fill:#000080;fill-opacity:0.723404;stroke-width:1.07928"
+       d="M 128.38118,735.54864 386.49978,335.41761 539.20095,735.54864 Z"
+       sodipodi:nodetypes="cccc" /></g><g
+     id="g3373"
+     transform="matrix(0.89757412,0,0,0.87166086,-93.472455,94.39968)"><path
+       id="path3369"
+       style="opacity:1;fill:#ffffff;stroke-width:1.07928"
+       d="M 128.38118,735.54864 386.49978,335.41761 688.72727,735.54864 Z"
+       sodipodi:nodetypes="cccc" /><path
+       id="path3371"
+       style="opacity:1;fill:#000080;fill-opacity:0.723404;stroke-width:1.07928"
+       d="M 128.38118,735.54864 386.49978,335.41761 539.20095,735.54864 Z"
+       sodipodi:nodetypes="cccc" /></g><g
+     id="g3361"
+     transform="translate(52.862839)"><path
+       id="rect1968"
+       style="opacity:1;fill:#ffffff;stroke-width:1.07928"
+       d="M 128.38118,735.54864 386.49978,335.41761 688.72727,735.54864 Z"
+       sodipodi:nodetypes="cccc" /><path
+       id="path603"
+       style="opacity:1;fill:#000080;fill-opacity:0.723404;stroke-width:1.07928"
+       d="M 128.38118,735.54864 386.49978,335.41761 539.20095,735.54864 Z"
+       sodipodi:nodetypes="cccc" /></g></g><g
+   inkscape:groupmode="layer"
+   id="layer2"
+   inkscape:label="mask"
+   style="display:inline"
+   sodipodi:insensitive="true"><path
+     id="rect4927"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:6.47973"
+     d="M 11.347656,9.078125 V 939.07812 H 941.34766 V 9.078125 Z M 473.5,111.59961 c 199.8,0 362,162.2 362,362 0,199.8 -162.2,362 -362,362 -199.8,0 -362,-162.2 -362,-362 0,-199.8 162.2,-362 362,-362 z" /></g><g
+   inkscape:groupmode="layer"
+   id="layer5"
+   inkscape:label="text"
+   sodipodi:insensitive="true"><text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:426.667px;line-height:1.25;font-family:Riesling;-inkscape-font-specification:Riesling;letter-spacing:0px;word-spacing:0px;fill:#000080;fill-opacity:1"
+     x="884.82385"
+     y="579.71228"
+     id="text1478"><tspan
+       sodipodi:role="line"
+       id="tspan1476"
+       x="884.82385"
+       y="579.71228"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:426.667px;font-family:Riesling;-inkscape-font-specification:Riesling;fill:#000080;fill-opacity:1"
+       dx="0">Moon Over Cairo</tspan></text></g></svg>
