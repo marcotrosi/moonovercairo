@@ -21,6 +21,8 @@ the Cairo lib. I also might take the chance to write some simple Cairo examples 
 - improve makefile
 - improve compilation flags
 - create cron job to daily get a diff report of the Cairo repo to update MOC
+- decide if the functions shall be just like the C lib or if some parameters shall be optional/have default values
 - decide if keeping the bindings simple or using metatables for OOP-like usage
+- write some aux functions like a circle drawing function that wraps the arc function (to be decided)
 - write documentation ( to be decided )
 - write code examples ( to be decided )
