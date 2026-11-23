@@ -1,5 +1,5 @@
 .SILENT:
-.PHONY: dirs clean
+.PHONY: dirs clean status
 
 DIR = obj lib
 SRC = src/moc.c
@@ -7,11 +7,11 @@ OBJ = obj/moc.o
 LIB = lib/moc.so
 
 CC = gcc
-CPKG = `pkg-config --cflags lua5.4` `pkg-config --cflags cairo`
+CPKG = `pkg-config --cflags lua5.5` `pkg-config --cflags cairo`
 CFLAGS = -fPIC -c -Wall -O2 $(CPKG)
 
 LD = gcc
-LDPKG = `pkg-config --libs lua5.4` `pkg-config --libs cairo`
+LDPKG = `pkg-config --libs lua5.5` `pkg-config --libs cairo`
 LDFLAGS = -shared -fPIC -O $(LDPKG)
 
 all: dirs $(LIB)
@@ -27,3 +27,7 @@ dirs:
 
 clean: 
 	rm -rf $(DIR)
+
+status:
+	lua doc/status.lua
+
