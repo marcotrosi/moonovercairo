@@ -195,7 +195,7 @@ int rel_line_to(lua_State *L) // <<<
    double dy = lua_tonumber(L, 3);
    double dx = lua_tonumber(L, 2);
    cairo_t *context = (cairo_t*)lua_topointer(L, 1);
-   cairo_line_to(context, dx, dy);
+   cairo_rel_line_to(context, dx, dy);
    return 0;
 } // >>>
 int rel_curve_to(lua_State *L) // <<<
@@ -207,7 +207,7 @@ int rel_curve_to(lua_State *L) // <<<
    double dy1 = lua_tonumber(L, 3);
    double dx1 = lua_tonumber(L, 2);
    cairo_t *context = (cairo_t*)lua_topointer(L, 1);
-   cairo_curve_to(context, dx1, dy1, dx2, dy2, dx3, dy3);
+   cairo_rel_curve_to(context, dx1, dy1, dx2, dy2, dx3, dy3);
    return 0;
 } // >>>
 int close_path(lua_State *L) // <<<
