@@ -1,6 +1,6 @@
 moc = require "moc"
 
-local S = moc.image_surface_create(0, 300, 300)
+local S = moc.image_surface_create(moc.FORMAT_RGB24, 300, 300)
 local C = moc.create(S)
 
 moc.set_source_rgb(C, 1.0, 1.0, 1.0)
